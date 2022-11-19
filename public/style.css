@@ -1,0 +1,132 @@
+body {
+    background-color: #696969;
+}
+
+.clearfix:after{
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+.clearfix {display: block;}
+html[xmlns] .clearfix {display: block;}
+* html .clearfix {height: 1%;}
+
+html{box-sizing: border-box}
+*, *:after,*:before {box-sizing: inherit}
+
+.inscription{  
+    width: 60%;
+    margin: 0 auto;
+    background: #EF5350;
+    text-align: center;
+    border-radius: 10px;
+    margin-top : 20px;
+}
+
+#connnexion{
+    color: lightblue;
+}
+#namepage {
+    color: black;
+}
+
+form{
+    float:left;
+}
+
+h1{
+    color:lightcoral;
+    font-family: tahoma;
+}
+h2{
+    font-family: tahoma;
+    color : lightcoral;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #EF5350;
+}
+
+input{
+    margin: 5px 20px;
+    width: 250px;
+    color: #EF5350;
+}
+
+button{
+    color: #EF5350;
+    background: lightgray;
+    border : black;
+    margin : 10px;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+p{
+    font-family: 'Trebuchet MS';
+    font-size: 2vh;
+    color: white;
+}
+
+.addcars:hover {
+    box-shadow: #696969;
+    color: white;
+    
+}
+
+
+.carte {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 2vh;
+}
+
+.card {
+    margin-left: 20px;
+}
+
+.card:hover {
+    box-shadow: 0 0 10px 5px;
+}
+
+
+.card-caract {
+    font-weight:lighter;
+}
+
+
+/* CONNEXION STATUT */
+
+.circle1 {
+    display: block;
+    background: greenyellow;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    margin: 0;
+}
+
+.circle2 {
+    display: block;
+    background: #EF5350;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    margin: 0;
+}
+
+    /* Responsive */ 
+
+
+@media screen and (max-width: 950px) {
+    .carte {
+        flex-direction: column-reverse;
+        width: 90%;
+    }
+
+}
